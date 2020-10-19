@@ -1,0 +1,1 @@
+export { SearchItemHeading } from './SearchItemHeading';

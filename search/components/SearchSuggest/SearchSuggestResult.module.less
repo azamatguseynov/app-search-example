@@ -1,0 +1,63 @@
+@import '../../../../assets/styles/variables.less';
+@import '../../../../assets/styles/mixins.less';
+
+.root {
+  border-radius: 0 0 8px 8px;
+  color: @color-primary-text;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+.row {
+  margin-top: 8px;
+  padding: 4px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(
+      90deg,
+      transparent,
+      @color-elements-opacity-3 10%,
+      @color-elements-opacity-3 90%,
+      transparent
+    );
+  }
+}
+
+.content {
+  flex: 0 0 40%;
+}
+.description {
+  flex: 0 0 60%;
+  text-align: right;
+  color: @color-elements-opacity-32;
+}
+
+.wrapper {
+  border-top: 1px solid @color-elements-opacity-3;
+  padding: 16px 24px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.category {
+  font-weight: 600;
+  padding-right: 23px;
+  box-sizing: border-box;
+  width: 180px;
+}
+
+.result {
+  background-color: @color-elements-opacity-3;
+  border-radius: 0 0 8px 8px;
+  color: @color-primary-text;
+  padding: 10px 0;
+}

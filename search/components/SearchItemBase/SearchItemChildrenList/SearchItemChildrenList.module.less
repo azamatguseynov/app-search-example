@@ -1,0 +1,75 @@
+@import '../../../../../assets/styles/variables.less';
+@import '../../../../../assets/styles/mixins.less';
+
+.childrenList {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7px;
+  padding-left: 23px;
+
+  .childrenItem + .childrenItem {
+    margin-top: 17px;
+  }
+}
+
+.treeLineBase {
+  content: '';
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: @color-elements-opacity-16;
+}
+
+.childrenItem {
+  position: relative;
+
+  &:before {
+    .treeLineBase();
+    width: 6px;
+    height: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -11px;
+  }
+
+  &:after {
+    .treeLineBase();
+    width: 1px;
+    top: -7px;
+    height: 42px;
+    left: -12px;
+  }
+
+  &:last-child {
+    &:after {
+      height: 20px;
+    }
+  }
+}
+
+.expandButtonWrapper {
+  margin-top: 17px;
+  position: relative;
+
+  &:before {
+    .treeLineBase();
+    width: 6px;
+    height: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -11px;
+  }
+
+  &:after {
+    .treeLineBase();
+    width: 1px;
+    top: -7px;
+    height: 23px;
+    left: -12px;
+  }
+}
+
+.arrowIcon {
+  margin-left: 12px;
+  margin-top: 2px;
+}

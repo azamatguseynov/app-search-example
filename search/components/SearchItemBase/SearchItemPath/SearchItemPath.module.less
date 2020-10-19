@@ -1,0 +1,20 @@
+@import '../../../../../assets/styles/variables.less';
+@import '../../../../../assets/styles/mixins.less';
+
+.path {
+  .font-text-secondary();
+  color: @color-primary;
+  margin-bottom: 4px;
+}
+
+.separator {
+  margin: 0 5px;
+}
+
+.pathLink {
+  color: @color-primary;
+
+  &_empty {
+    color: @color-primary-text-opacity-64;
+  }
+}

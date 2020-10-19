@@ -1,0 +1,1 @@
+export { SearchResultTabs } from './SearchResultTabs';

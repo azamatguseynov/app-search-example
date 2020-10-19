@@ -1,0 +1,1 @@
+export { getStockElementSearchItem } from './getStockElementSearchItem';

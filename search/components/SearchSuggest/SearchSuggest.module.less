@@ -1,0 +1,36 @@
+@import '../../../../assets/styles/variables.less';
+
+.root {
+  position: relative;
+  min-height: auto;
+  height: @size-main-search-height;
+}
+
+.tooltip {
+  position: absolute;
+  top: @header-height + @page-content-container-margin-top;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 100%;
+  max-width: @container-width;
+}
+
+.overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.24);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.focused {
+  box-shadow: 0 4px 16px 0 @color-elements-opacity-12;
+  height: auto;
+}

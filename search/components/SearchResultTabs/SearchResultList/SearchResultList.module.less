@@ -1,0 +1,48 @@
+@import '../../../../../assets/styles/variables.less';
+@import '../../../../../assets/styles/mixins.less';
+
+.searchResult {
+  padding: 24px;
+}
+
+.currentTotal {
+  margin-bottom: 22px;
+  .font-text-secondary;
+}
+
+.searchItem + .searchItem {
+  margin-top: 12px;
+}
+
+.lightingIcon {
+  color: @color-primary;
+}
+
+.fetchMoreButton {
+  margin-top: 12px;
+}
+
+.noResults {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  &Icon {
+    width: 105px;
+    height: 105px;
+    margin-bottom: 20px;
+    color: @color-elements-opacity-16;
+  }
+
+  &Title {
+    margin-bottom: 5px;
+    .font-text-primary-bold;
+  }
+
+  &Description {
+    color: @color-primary-text-opacity-32;
+    .font-text-secondary;
+  }
+}

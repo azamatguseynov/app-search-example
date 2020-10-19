@@ -1,0 +1,27 @@
+@import '../../../../../assets/styles/variables.less';
+@import '../../../../../assets/styles/mixins.less';
+
+.heading {
+  display: inline-flex;
+  align-items: center;
+  flex-basis: content;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+
+  // FIXME
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.title {
+  .text-overflow(100%);
+  .font-headings-secondary();
+}
